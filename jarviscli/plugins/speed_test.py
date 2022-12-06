@@ -12,6 +12,7 @@ import os
 def speedtest(jarvis, s):
     """Runs a speedtest on your internet connection"""
     working_dir = os.getcwd()
+    print(working_dir)
     my_os = platform.platform()
     if "Linux" in my_os:
         process = subprocess.run(

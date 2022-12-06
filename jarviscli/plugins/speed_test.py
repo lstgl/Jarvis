@@ -20,7 +20,7 @@ def speedtest(jarvis, s):
         return ("")
     if "Windows" in my_os:
         cmd = working_dir + "/env/lib/python3.10/site-packages/speedtest/win/speedtest.exe"
-        process = subprocess.call([cmd])
+        process = subprocess.call(cmd)
         return("")
     if "mac_OS" in my_os:
         process = subprocess.run(
